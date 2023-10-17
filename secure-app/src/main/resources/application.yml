@@ -1,0 +1,21 @@
+server:
+  port: 8020
+spring:
+  datasource:
+    url: jdbc:h2:mem:myapp
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa.database-platform: org.hibernate.dialect.H2Dialect
+  jpa:
+    defer-datasource-initialization: true
+    properties.hibernate.globally_quoted_identifiers: true
+    properties.hibernate.globally_quoted_identifiers_skip_column_definitions: true
+    show_sql: true
+  h2.console.enabled: true
+
+  security:
+    user:
+      name: sudipta
+      password: maity
+
