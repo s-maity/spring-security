@@ -14,8 +14,8 @@ spring:
     show_sql: true
   h2.console.enabled: true
 
-  security:
-    user:
-      name: sudipta
-      password: maity
+#  security:
+#    user:
+#      name: sudipta
+#      password: maity
 

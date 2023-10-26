@@ -1,2 +1,2 @@
 -- Products
-insert into "t_user" values(1,'sudipta','maity','admin');
+insert into "t_user" ("id","user_name","password","roles") values(100,'admin','admin','ROLE_ADMIN');

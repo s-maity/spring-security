@@ -1,4 +1,4 @@
-package com.example.secure.secureapp;
+package com.example.secure.secureapp.controller;
 
 import lombok.AllArgsConstructor;
 import org.springframework.http.HttpStatus;
@@ -19,4 +19,5 @@ public class ItemController {
         var items = new ItemsDto(List.of("Samsung Smart phone", "Samsung Smart watch", "M1 Macbook AIR"));
         return new ResponseEntity<>(items, HttpStatus.OK);
     }
+
 }
