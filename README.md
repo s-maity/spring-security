@@ -39,3 +39,12 @@ We need to have an end point [POST] /authenticate which will accept username and
 We need to add some dependencies of jjwt in order to work with JWT token. 
 To validate the token, we define a filter  `AuthFilter extends OncePerRequestFilter` which will validate the token and set the Security context with user.
 To register the filter with Spring Security ,the filter needs to be added in the Security filter chain configuration.
+
+
+### Oauth2  based auth
+Oauth2 can be implemented with Github, Google, FB or with own authorization server.
+First, we will implement Oauth2 using Github. 
+Add `spring-boot-starter-oauth2-client` dependency. It will add spring security and oauth2 related dependencies. 
+Configure Client-id and client-secret in Github Developers settings. 
+Add the client-id and secret in application.yaml. 
+Update the Security filter chain to use Oauth2 

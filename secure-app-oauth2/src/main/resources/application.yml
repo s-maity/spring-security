@@ -1,0 +1,18 @@
+server:
+  port: 8020
+
+spring:
+  security:
+    oauth2:
+      client:
+        registration.github:
+          client-id: 67c6a5721569a2572fe2
+          client-secret: 63611d81a1a40b3728c035ad6911c378f63f8a43
+
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+
