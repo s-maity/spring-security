@@ -1,0 +1,24 @@
+server:
+  port: 8020
+spring:
+  datasource:
+    url: jdbc:h2:mem:myapp
+    driverClassName: org.h2.Driver
+    username: admin
+    password: admin
+  jpa.database-platform: org.hibernate.dialect.H2Dialect
+  jpa:
+    defer-datasource-initialization: true
+    properties.hibernate.globally_quoted_identifiers: true
+    properties.hibernate.globally_quoted_identifiers_skip_column_definitions: true
+    show_sql: true
+  h2.console.enabled: true
+
+app.jwt.key: "T+5BYKtt3Q8iDfhAmvt5o2Lb9ooHItjopYzzVFIZ5vxtfYpAOPBbguSQ3/ymqQ0R0LR1vbkx7vSwpPQ+vrzqZfEKSoiKyP6zl4v8LBClAJOujnSzVyyR3+uAMWwwVoBZDaddcCbKsam167AKsoa9sEpPghMR7ncCKg3FuX23tMmtWncckW1KmGEFPLJ8DPhf3DpgsDvUj3Fv2xtC61c9fcQw3FOhJyPhXAx9reYkG4eiflpRV/p0c0yC/9x2TDTQgYywN1buAqIfNgp1fjB00pFous2F8eKxC14J7bmeuNgWg0CScGuxEJGpqTXrKbPMekDNLuZyu0Z7U1fd0/Wqj8BG1J+FWef0eYO3LBCOui8="
+
+logging:
+  level:
+    org:
+      springframework:
+        security: TRACE
+
